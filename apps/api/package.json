@@ -1,0 +1,31 @@
+{
+  "name": "@demo/api",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "codegen": "graphql-codegen --config ./lib/graphql-codegen/index.ts",
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "graphql-yoga": "^3.9.0",
+    "next": "latest"
+  },
+  "devDependencies": {
+    "@demo/eslint-config": "*",
+    "@demo/jest-config": "*",
+    "@demo/next-config": "*",
+    "@demo/ts-config": "*",
+    "@graphql-codegen/cli": "^3.3.0",
+    "@graphql-codegen/client-preset": "^3.0.0",
+    "@graphql-tools/merge": "^8.4.1",
+    "@graphql-tools/resolvers-composition": "^6.5.18",
+    "@graphql-tools/schema": "^9.0.18",
+    "@graphql-codegen/typescript": "^3.0.3",
+    "@graphql-codegen/typescript-resolvers": "^3.2.0",
+    "@types/node": "^18.15.11",
+    "typescript": "^5.0.4"
+  }
+}
