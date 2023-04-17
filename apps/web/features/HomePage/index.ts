@@ -1,2 +1,2 @@
 export { HomeView } from './views/HomeView';
-export { useHomePage } from './hooks/useHomePage';
+export { getHomePageData } from './functions/getHomePageData';

@@ -1,6 +1,8 @@
 {
-  "headline": "Steigern Sie Ihre Produktivität",
-  "subline": "Erleben Sie eine neue Ebene an Effizienz und Organisation mit unserer innovativen Software, die speziell für eine optimierte Arbeitsweise entwickelt wurde und Ihnen Zeit spart",
+  "headline": "Entdecke Star Wars",
+  "subline": "Von Sammlerstücken bis hin zu Spielen und vielem mehr: Tauche ein in das epische Abenteuer einer weit entfernten Galaxie mit unserer breiten Palette an Merchandise-Artikeln und Erlebnissen, die dich in eine Galaxie jenseits deiner wildesten Träume führen werden.",
   "languageSwitchLabel": "Auf Englisch wechseln",
-  "languageSwitchHref": "/"
+  "languageSwitchHref": "/",
+  "restApiLinkLabel": "REST API",
+  "graphqlApiLinkLabel": "GraphQL API"
 }

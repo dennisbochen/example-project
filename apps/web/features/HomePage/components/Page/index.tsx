@@ -1,12 +1,20 @@
 import { H1, P } from '@demo/ui';
 
-type HeroProps = {
+type PageProps = {
   headline?: string;
   subline?: string;
   ctaComponent?: React.ReactNode;
+  consoleComponent?: React.ReactNode;
+  apiLinksComponent?: React.ReactNode;
 };
 
-export const Hero = ({ headline, subline, ctaComponent }: HeroProps) => (
+export const Page = ({
+  headline,
+  subline,
+  consoleComponent,
+  ctaComponent,
+  apiLinksComponent,
+}: PageProps) => (
   <div className="bg-gray-900 min-h-screen flex items-center">
     <div className="relative isolate flex-1 pt-14">
       <div
@@ -26,9 +34,19 @@ export const Hero = ({ headline, subline, ctaComponent }: HeroProps) => (
           <div className="mx-auto max-w-2xl text-center">
             {headline && <H1>{headline}</H1>}
             {subline && <P>{subline}</P>}
+            {consoleComponent && (
+              <div className="text-left mx-auto mt-10 max-w-2xl">
+                {consoleComponent}
+              </div>
+            )}
             {ctaComponent && (
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 {ctaComponent}
+              </div>
+            )}
+            {apiLinksComponent && (
+              <div className="mt-10 flex items-center justify-center gap-x-6 text-white text-sm">
+                {apiLinksComponent}
               </div>
             )}
           </div>

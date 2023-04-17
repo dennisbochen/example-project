@@ -1,6 +1,8 @@
 {
-  "headline": "Boost Productivity",
-  "subline": "Experience a new level of efficiency and organization with our cutting-edge software, designed to streamline your workflow and save you time",
+  "headline": "Discover Star Wars",
+  "subline": "From collectibles to games and more, immerse yourself in the epic adventure of a galaxy far, far away with our wide range of merchandise and experiences that will take you to a galaxy beyond your wildest dreams.",
   "languageSwitchLabel": "Switch to German",
-  "languageSwitchHref": "/de"
+  "languageSwitchHref": "/de",
+  "restApiLinkLabel": "REST API",
+  "graphqlApiLinkLabel": "GraphQL API"
 }

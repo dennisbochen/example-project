@@ -1,12 +1,19 @@
 import { GetStaticProps } from 'next';
-import { HomeView, useHomePage } from '~/features/HomePage';
+import { GetStarWarsConsoleDataQuery } from '~/../api/lib/graphql-codegen/gql/graphql';
+import { HomeView, getHomePageData } from '~/features/HomePage';
 
 type HomePageProps = {
   messages: Record<string, string>;
+  starWarsConsoleData: GetStarWarsConsoleDataQuery;
 };
 
-export default function HomePage({ messages }: HomePageProps) {
-  return <HomeView messages={messages} />;
+export default function HomePage({
+  messages,
+  starWarsConsoleData,
+}: HomePageProps) {
+  return (
+    <HomeView messages={messages} starWarsConsoleData={starWarsConsoleData} />
+  );
 }
 
 export const getStaticProps: GetStaticProps<{
@@ -15,11 +22,12 @@ export const getStaticProps: GetStaticProps<{
   // ⚠️ hardcoded for demo brevity
   const lng = 'en';
 
-  const { messages } = await useHomePage({ lng });
+  const { messages, starWarsConsoleData } = await getHomePageData({ lng });
 
   return {
     props: {
       messages,
+      starWarsConsoleData,
     },
   };
 };

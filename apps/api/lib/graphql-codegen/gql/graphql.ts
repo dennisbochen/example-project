@@ -1,4 +1,5 @@
 /* eslint-disable */
+import { TypedDocumentNode as DocumentNode } from '@graphql-typed-document-node/core';
 export type Maybe<T> = T | null;
 export type InputMaybe<T> = Maybe<T>;
 export type Exact<T extends { [key: string]: unknown }> = { [K in keyof T]: T[K] };
@@ -37,3 +38,11 @@ export type Query = {
   __typename?: 'Query';
   getRandomPerson?: Maybe<Person>;
 };
+
+export type GetStarWarsConsoleDataQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type GetStarWarsConsoleDataQuery = { __typename?: 'Query', getRandomPerson?: { __typename?: 'Person', name?: string | null, birthYear?: string | null, eyeColor?: string | null, hairColor?: string | null, height?: string | null } | null };
+
+
+export const GetStarWarsConsoleDataDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"getStarWarsConsoleData"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"getRandomPerson"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"name"}},{"kind":"Field","name":{"kind":"Name","value":"birthYear"}},{"kind":"Field","name":{"kind":"Name","value":"eyeColor"}},{"kind":"Field","name":{"kind":"Name","value":"hairColor"}},{"kind":"Field","name":{"kind":"Name","value":"height"}}]}}]}}]} as unknown as DocumentNode<GetStarWarsConsoleDataQuery, GetStarWarsConsoleDataQueryVariables>;
