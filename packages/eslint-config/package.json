@@ -2,7 +2,7 @@
   "name": "@demo/eslint-config",
   "version": "0.0.0",
   "main": "index.js",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "dependencies": {
     "eslint": "^8.38.0",
     "eslint-config-next": "13.3.0",

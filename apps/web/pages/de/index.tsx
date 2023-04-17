@@ -13,7 +13,7 @@ export const getStaticProps: GetStaticProps<{
   messages: Record<string, any>;
 }> = async () => {
   // ⚠️ hardcoded for demo brevity
-  const lng = 'en';
+  const lng = 'de';
 
   const { messages } = await useHomePage({ lng });
 
