@@ -1,0 +1,9 @@
+{
+  "name": "@demo/jest-config",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "UNLICENSED",
+  "publishConfig": {
+    "access": "public"
+  }
+}
