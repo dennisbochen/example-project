@@ -24,9 +24,5 @@
   ],
   "volta": {
     "node": "18.16.0"
-  },
-  "dependencies": {
-    "@tanstack/react-query": "^4.29.3",
-    "graphql-request": "^6.0.0"
   }
 }

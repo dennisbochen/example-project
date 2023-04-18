@@ -9,7 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@demo/ui": "*",
     "@heroicons/react": "^2.0.17",
+    "@tanstack/react-query": "^4.29.3",
+    "graphql-request": "^6.0.0",
     "i18next": "^22.4.14",
     "i18next-resources-to-backend": "^1.1.3",
     "next": "latest",
@@ -24,7 +27,6 @@
     "@demo/next-config": "*",
     "@demo/tailwind-config": "*",
     "@demo/ts-config": "*",
-    "@demo/ui": "*",
     "@types/jest": "^29.5.0",
     "@types/node": "^18.15.11",
     "@types/react": "^18.0.35",
