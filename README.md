@@ -3,16 +3,6 @@
 A small demo projects to showcase my methodology when building projects.
 It doesn't aim to be perfect, but rather to give an impression of what my code looks like.
 
-## Things that could be improved with more time
-
-- more and more complex/thorough (i.e. hook/components tests with `react-testing-library`) unit tests; more integration tests with `cypress`
-- api URLs in preview builds pointing to frontend preview builds
-- more fine tuned component structure and separation
-- more complex GraphQL endpoints i.e. Prisma ORM integration
-- Authentication layer with NextAuth
-- NextJS `app` directory demo
-- more complex UI example, not just a TailwindUI derivative
-
 ## What's inside?
 
 Some things showcased in this demo include:
@@ -83,3 +73,13 @@ This example uses the following tools:
 - [Demo API Rest](https://example-project-api.vercel.app/api/rest/person/random)
 - [Demo Web](https://example-project-web.vercel.app/)
 - [Initial Readme](https://github.com/vercel/turbo/tree/main/examples/basic)
+
+## Things that could be improved with more time and/or effort
+
+- more and more complex/thorough (i.e. hook/components tests with `react-testing-library`) unit tests; more integration tests with `cypress`
+- api URLs in preview builds pointing to frontend preview builds
+- more fine tuned component structure and separation
+- more complex GraphQL endpoints i.e. Prisma ORM integration
+- Authentication layer with NextAuth
+- NextJS `app` directory demo
+- more complex UI example, not just a TailwindUI derivative
