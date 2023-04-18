@@ -1,81 +1,85 @@
-# Turborepo starter
+# Demo Project
 
-This is an official starter Turborepo.
+A small demo projects to showcase my methodology when building projects.
+It doesn't aim to be perfect, but rather to give an impression of what my code looks like.
 
-## Using this example
+## Things that could be improved with more time
 
-Run the following command:
-
-```sh
-npx create-turbo@latest
-```
+- more and more complex/thorough (i.e. hook/components tests with `react-testing-library`) unit tests; more integration tests with `cypress`
+- api URLs in preview builds pointing to frontend preview builds
+- more fine tuned component structure and separation
+- more complex GraphQL endpoints i.e. Prisma ORM integration
+- Authentication layer with NextAuth
+- NextJS `app` directory demo
+- more complex UI example, not just a TailwindUI derivative
 
 ## What's inside?
 
-This Turborepo includes the following packages/apps:
+Some things showcased in this demo include:
 
-### Apps and Packages
+- Monorepo with Turbo
+- Packages with for configurations and shared UI
+- General tooling: Prettier, ESLint
+- React i18n for translation and string management
+- Example REST & GraphQL API: NextJS with TypeScript
+  - Built with Yoga
+  - Resolver and Query type generation with `graphql-codegen`
+  - Resolver Composition for protecting resolvers
+  - Simple REST Endpoint
+- Example Web Application: NextJS with TypeScript
+  - TailwindCSS for styling
+  - react-query for client side requests
+  - graphql-request for client and server requests
+- Jest for Unit Testing
+  - Sample some simple tests
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
+## Apps and Packages
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+- `api`: a [Next.js](https://nextjs.org/) app using api routes to demo a REST and GraphQL endpoint
+- `web`: a [Next.js](https://nextjs.org/) app for hosting a super simple frontend
+- `ui`: a stub React component library shared by both `web` and potential future applications
+- `eslint-config`: `eslint` configuration used throughout the monorepo
+- `ts-config`: `typescript` configurations used throughout the monorepo
+- `jest-config`: `jest` configuration used throughout the monorepo
+- `next-config`: `next` configuration used throughout the monorepo
+- `tailwind-config`: `tailwind` and `postcss` configurations used throughout the monorepo
 
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
+## Build
 
 To build all apps and packages, run the following command:
 
 ```
-cd my-turborepo
-pnpm build
+# run this in root dir
+npm install
+npm build
 ```
 
-### Develop
+## Develop
 
 To develop all apps and packages, run the following command:
 
 ```
-cd my-turborepo
-pnpm dev
+# run this in root dir
+npm install
+npm dev
 ```
 
-### Remote Caching
+## Utilities
 
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+This example uses the following tools:
 
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
+- [TypeScript](https://www.typescriptlang.org/) for static type checking
+- [ESLint](https://eslint.org/) for code linting
+- [Prettier](https://prettier.io) for code formatting
+- [GraphQL Yoga](https://the-guild.dev/graphql/yoga-server) (including some sub packages)
+- [graphql-request](https://github.com/jasonkuhrt/graphql-request)
+- [react-query](https://tanstack.com/query/latest/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [jest (ts-jest)](https://jestjs.io/)
 
 ## Useful Links
 
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+- [Demo API GraphQL](https://example-project-api.vercel.app/api/graphql)
+- [Demo API Rest](https://example-project-api.vercel.app/api/rest/person/random)
+- [Demo Web](https://example-project-web.vercel.app/)
+- [Initial Readme](https://github.com/vercel/turbo/tree/main/examples/basic)
